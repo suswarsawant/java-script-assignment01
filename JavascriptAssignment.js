@@ -16,7 +16,7 @@ function isPrime(Number1) {
     if (Number1 <= 1) {
       return "not prime";
     } 
-    for (let i = 2; i <= Math.sqrt(Number1); i++) {
+    for (let i = 2; i <= Number1/2; i++) {
       if (Number1 % i == 0) {
         return ["not prime",null];
       }
